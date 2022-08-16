@@ -10,21 +10,19 @@ function scuberGreetingForFeet(ride) {
 }
 
 function ternaryCheckCity(city) {
-  // Write your code here!
-  if (city === "NYC") {
-    return "Ok, sounds good.";
-  } else {
-    return "No go.";
-  }
+  const getCity = city === "NYC" ? "Ok, sounds good." : "No go.";
+  return getCity;
 }
 
 function switchOnCharmFromTip(msg) {
-  // Write your code here!
-  if (msg === "generous") {
-    return "Thank you so much.";
-  } else if (msg === "not as generous") {
-    return "Thank you.";
-  } else {
-    return "Bye.";
+  switch (msg) {
+    case (msg = "generous"):
+      return "Thank you so much.";
+      break;
+    case (msg = "not as generous"):
+      return "Thank you.";
+      break;
+    default:
+      return "Bye.";
   }
 }
